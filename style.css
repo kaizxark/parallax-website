@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial;
+}
+
+
+.section-1{
+  background-image: url(image-1.jpg);
+  height: 100vh;
+}
+
+.section-2{
+  background-image: url(image-2.jpg);
+  min-height: 400px;
+}
+
+.section-3{
+  background-image: url(image-3.jpg);
+  min-height: 400px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.section-1 .text-div,
+.section-2 .text-div,
+.section-3 .text-div {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: rgb(250, 163, 0);
+  font-size: 30px;
+  letter-spacing: 8px;
+}
+
+.text {
+  background-color: rgb(32, 31, 31);
+  padding: 18px;
+  font-weight: bold;
+  border: 1px solid rgb(229, 37, 229);
+}
+
+.section-1-2, 
+.section-2-2,
+.section-3-2 {
+  padding: 50px 80px;
+  text-align: center;
+  background-color: white;
+  color: #666;
+  line-height: 30px;
+}
+
+.section-1-2 p,
+.section-2-2 p,
+.section-3-2 p {
+  text-align: justify;
+  font-size: 15px;
+}
+
+.section-2-2,
+.section-3-2 {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust section heights to fit smaller screens */
+  .section-1,
+  .section-2,
+  .section-3 {
+    height: auto;
+    min-height: 300px; /* Adjust as needed */
+  }
+  
+  /* Adjust font sizes for smaller screens */
+  .text-div .text {
+    font-size: 24px; /* Adjust as needed */
+  }
+
+  /* Adjust padding for smaller screens */
+  .section-1-2,
+  .section-2-2,
+  .section-3-2 {
+    padding: 30px; /* Adjust as needed */
+  }
+}
+
